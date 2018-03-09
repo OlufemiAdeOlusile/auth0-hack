@@ -6,7 +6,7 @@ var app = express();
 
 app.use(bodyParser.json());
 
-app.post('/weather', function (req, res) {
+app.post('/check', function (req, res) {
   var id =req.param('id');
   var password = req.param('password');
   var apiKey = req.webtaskContext.secrets.WEATHER_KEY
